@@ -8,11 +8,17 @@ body {
 }
 
 #probleme {
-    width: 780px;
-    height: 100px;
     margin: 0 auto;
     background-color: tan;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+}
+
+#resultat {
+    visibility:hidden;
+    margin: 0 auto;
+    background-color: tan;
+    padding: 10px;
+    border-radius: 10px;
 }
