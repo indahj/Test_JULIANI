@@ -18,14 +18,16 @@ function calculerRepartition(montant) {
     
     
     // Vérifie si montant est bien un nombre ou pas
-    if(isNaN(montant) || montant == "") { // si le montant n'est pas un nombre ou il est vide, le calcule ne marchera pas puis il affiche un message suivant
+    if(isNaN(montant) || montant === "") { // si le montant n'est pas un nombre ou il est vide, le calcule ne marchera pas puis il affiche un message suivant
         afficheRes.textContent = "Oops.. Veuillez entrer un nombre"
         afficheRes.style.visibility = 'visible'
+        afficheRes.style.backgroundColor = "red"
         // console.log("Veuillez entre un nombre")
     } 
     else { // si c'est ok, il affiche le message suivant puis il rentre dans le calcule 
         afficheRes.innerHTML = "Pour répartir la somme de " + montant + "€, il vous faut: <br/>"    
-        afficheRes.style.visibility = 'visible'
+        afficheRes.style.visibility = 'visible'        
+        afficheRes.style.backgroundColor = "tan"
 	    //console.log("Pour répartir la somme de " + montant + "€, il vous faut:");
 
     }
